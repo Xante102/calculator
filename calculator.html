@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="calculator.js"></script>
+  </head>
+  <body>
+    <!-- <form>
+      <input type="text" id="num1" /><br />
+      <input type="text" id="num2" /><br />
+      <input type="submit" onClick="multiply()" value="Multiply" />
+    </form>
+    <p>
+       Result :
+    </p>
+    <p id="result"></p> -->
+    <h2 class="text-lg font-semibold text-gray-700 capitalize ">Calculator</h2>
+
+    
+    <section class="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md mt-36">
+      
+      <form>
+          <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
+              <div>
+                  <label class="text-gray-700" for="category">Category</label>
+                  <select name="" id="category" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring">                    
+                    <option value="" selected disabled>Choose Category</option>
+                    <option value="">Simple Math Calculation</option>
+                    <option value="">Area of Circle with Circumference</option>
+                    <option value="">Area of a Circle with Radius</option>
+                    <option value="">Area of a Circle with Diameter</option>
+                    <option value="">Area of a Rectangle</option>
+                  </select>
+              </div>
+
+              <div>
+                  <label class="text-gray-700" for="emailAddress">Email Address</label>
+                  <input id="emailAddress" type="email" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring">
+              </div>
+
+              <div>
+                  <label class="text-gray-700" for="password">Password</label>
+                  <input id="password" type="password" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring">
+              </div>
+
+              <div>
+                  <label class="text-gray-700" for="passwordConfirmation">Password Confirmation</label>
+                  <input id="passwordConfirmation" type="password" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring">
+              </div>
+          </div>
+
+      </form>
+  </section>
+
+  </body>
+</html>
